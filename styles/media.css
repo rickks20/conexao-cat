@@ -1,0 +1,110 @@
+@media screen and (max-width: 760px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    #title{
+        margin-left: 0; /* Move para a esquerda */
+        align-self: flex-start;
+    }
+
+    h2 {
+        font-size: 48px; /* Define um tamanho fixo para evitar inconsistências */
+        letter-spacing: 1px; /* Mantém o espaçamento entre os caracteres */
+        line-height: 0.8; /* Controla a altura entre as linhas */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    form{
+        display: flex; /* Torna o formulário flexível */
+        flex-direction: column; /* Garante que os elementos fiquem empilhados */
+        align-items: center; /* Centraliza os itens no formulário */
+   
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    /* Centraliza o parágrafo em sua largura */
+p {
+    font-size: 20px; /* Define um tamanho fixo para o texto */
+    letter-spacing: 1px; /* Espaçamento entre os caracteres */
+    line-height: 1.2; /* Altura apropriada entre as linhas */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+    input{
+        align-self: center;
+    
+    }
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    .hamburger-menu{
+    margin-left: auto; /* Move para a esquerda */
+    margin-top: -70px;
+
+}
+
+  /* Ocultar o checkbox */
+.hidden-checkbox {
+    display: none;
+  }
+  
+  /* Estilo do botão de menu */
+  .hamburger-menu {
+    display: none; /* Oculta o botão em telas maiores */
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do menu */
+  nav#menu {
+    display: none; /* Ocultar o menu inicialmente */
+    flex-direction: column;
+    background-color: rgb(34,34,34);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(56, 56, 56)
+    
+  }
+  
+  nav#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav#menu ul li {
+    margin: 10px 0;
+  }
+  
+  nav#menu ul li a {
+    text-decoration: none;
+    color: white;
+  }
+    .hamburger-menu {
+      display: block; /* Mostra o botão */
+    }
+  
+  
+  /* Mostrar menu ao clicar no botão */
+  .hidden-checkbox:checked + .hamburger-menu + #menu {
+    display: flex;
+  }
+
+}
